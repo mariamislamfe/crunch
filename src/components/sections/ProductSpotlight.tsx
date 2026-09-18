@@ -124,11 +124,7 @@ export default function ProductSpotlight({
                 transform: `rotate(${f.rot}deg)`,
               }}
             >
-              <FruitArt
-                fruit={fruit}
-                form="sliced"
-                className="w-full h-auto drop-shadow-[0_20px_40px_rgba(0,0,0,0.5)]"
-              />
+              <FruitArt fruit={fruit} form="sliced" className="w-full h-auto" />
             </div>
           ))}
 

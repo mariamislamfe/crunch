@@ -112,11 +112,7 @@ export default function ScrollStory() {
               transform: `translate(${c.x}, ${c.y}) rotate(${c.rot}deg)`,
             }}
           >
-            <FruitArt
-              fruit={c.fruit}
-              form={c.form}
-              className="w-full h-auto drop-shadow-[0_20px_40px_rgba(0,0,0,0.4)]"
-            />
+            <FruitArt fruit={c.fruit} form={c.form} className="w-full h-auto" />
           </div>
         ))}
 

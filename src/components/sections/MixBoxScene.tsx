@@ -123,11 +123,7 @@ export default function MixBoxScene() {
             className="absolute"
             style={{ width: o.size, maxWidth: "150px" }}
           >
-            <FruitArt
-              fruit={o.fruit}
-              form={o.form}
-              className="w-full h-auto drop-shadow-[0_20px_40px_rgba(0,0,0,0.45)]"
-            />
+            <FruitArt fruit={o.fruit} form={o.form} className="w-full h-auto" />
           </div>
         ))}
       </div>

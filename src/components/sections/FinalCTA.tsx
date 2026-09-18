@@ -79,7 +79,7 @@ export default function FinalCTA() {
           {SHARDS.map((s, i) => (
             <div
               key={i}
-              className="final-shard absolute drop-shadow-[0_20px_30px_rgba(0,0,0,0.5)]"
+              className="final-shard absolute"
               style={{
                 width: s.size,
                 top: s.top,
