@@ -70,6 +70,9 @@ h1, h2, h3, h4,
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 ::selection {

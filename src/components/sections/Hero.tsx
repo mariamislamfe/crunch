@@ -158,7 +158,7 @@ export default function Hero() {
               <PackageArt
                 type="pouch"
                 eager
-                className="w-[66%] h-auto drop-shadow-[0_50px_90px_rgba(33,22,9,0.28)]"
+                className="w-[78%] h-auto drop-shadow-[0_50px_90px_rgba(33,22,9,0.28)]"
               />
             </div>
 
@@ -187,7 +187,7 @@ export default function Hero() {
             <span className="block overflow-hidden">
               <span className="hero-word inline-block">Crisp.</span>
             </span>
-            <span className="block overflow-hidden font-script text-amber-soft">
+            <span className="block overflow-hidden font-script text-amber-soft -ml-3 pl-3">
               <span className="hero-word inline-block">Sweet.</span>
             </span>
           </h1>

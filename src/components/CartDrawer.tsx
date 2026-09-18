@@ -53,7 +53,7 @@ export default function CartDrawer() {
           )}
           {items.map(({ product, quantity }) => (
             <div key={product.id} className="flex gap-4">
-              <div className="w-16 h-16 shrink-0 rounded-xl bg-ink-softer p-2">
+              <div className="w-20 h-20 shrink-0">
                 <PackageArt type={product.packageType} className="w-full h-full object-contain" />
               </div>
               <div className="flex-1 min-w-0">

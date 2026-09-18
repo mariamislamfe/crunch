@@ -147,7 +147,7 @@ export default function ProductSpotlight({
           <p className="text-amber-soft italic font-display text-lg mb-5">{product.tagline}</p>
           <p className="text-cream/65 leading-relaxed max-w-md mb-8">{product.description}</p>
           <div className="flex items-center gap-6 flex-wrap">
-            <div className="spot-pack w-14 h-14 shrink-0 rounded-2xl bg-cream/[0.04] ring-1 ring-white/10 p-2">
+            <div className="spot-pack w-20 h-20 shrink-0">
               <PackageArt type="pouch" className="w-full h-full object-contain" />
             </div>
             <span className="font-display text-2xl">${product.price.toFixed(2)}</span>

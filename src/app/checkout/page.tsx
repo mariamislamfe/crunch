@@ -27,39 +27,43 @@ export default function CheckoutPage() {
             {items.map(({ product, quantity }) => (
               <div
                 key={product.id}
-                className="flex gap-5 border border-line rounded-2xl p-5 items-center"
+                className="flex flex-wrap gap-4 border border-line rounded-2xl p-5 items-center"
               >
-                <div className="w-20 h-20 shrink-0 rounded-xl bg-ink-softer p-3">
-                  <PackageArt type={product.packageType} className="w-full h-full object-contain" />
+                <div className="flex items-center gap-4 w-full sm:w-auto sm:flex-1 min-w-0">
+                  <div className="w-20 h-20 sm:w-24 sm:h-24 shrink-0">
+                    <PackageArt type={product.packageType} className="w-full h-full object-contain" />
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <p className="font-display text-lg">{product.name}</p>
+                    <p className="text-cream/45 text-xs mt-1">{product.weight}</p>
+                  </div>
                 </div>
-                <div className="flex-1 min-w-0">
-                  <p className="font-display text-lg">{product.name}</p>
-                  <p className="text-cream/45 text-xs mt-1">{product.weight}</p>
-                </div>
-                <div className="flex items-center border border-line rounded-full overflow-hidden">
+                <div className="flex items-center justify-between gap-4 w-full sm:w-auto">
+                  <div className="flex items-center border border-line rounded-full overflow-hidden">
+                    <button
+                      className="w-8 h-8 hover:bg-white/5"
+                      onClick={() => setQuantity(product.id, quantity - 1)}
+                    >
+                      −
+                    </button>
+                    <span className="w-8 text-center text-sm">{quantity}</span>
+                    <button
+                      className="w-8 h-8 hover:bg-white/5"
+                      onClick={() => setQuantity(product.id, quantity + 1)}
+                    >
+                      +
+                    </button>
+                  </div>
+                  <span className="text-right font-display text-lg">
+                    ${(product.price * quantity).toFixed(2)}
+                  </span>
                   <button
-                    className="w-8 h-8 hover:bg-white/5"
-                    onClick={() => setQuantity(product.id, quantity - 1)}
+                    onClick={() => remove(product.id)}
+                    className="text-cream/40 hover:text-wine-soft text-xs"
                   >
-                    −
-                  </button>
-                  <span className="w-8 text-center text-sm">{quantity}</span>
-                  <button
-                    className="w-8 h-8 hover:bg-white/5"
-                    onClick={() => setQuantity(product.id, quantity + 1)}
-                  >
-                    +
+                    Remove
                   </button>
                 </div>
-                <span className="w-20 text-right font-display text-lg">
-                  ${(product.price * quantity).toFixed(2)}
-                </span>
-                <button
-                  onClick={() => remove(product.id)}
-                  className="text-cream/40 hover:text-wine-soft text-xs"
-                >
-                  Remove
-                </button>
               </div>
             ))}
           </div>
