@@ -33,7 +33,7 @@ export default function Navbar() {
           className="font-display text-xl tracking-tight text-cream"
           style={{ letterSpacing: "0.02em" }}
         >
-          Cloud Crunch
+          Could Crunch
         </a>
 
         <ul className="hidden md:flex items-center gap-10">

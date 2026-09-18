@@ -31,9 +31,9 @@ const signatra = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Cloud Crunch — Crisp. Sweet.",
+  title: "Could Crunch — Crisp. Sweet.",
   description:
-    "Cloud Crunch is a premium dried-fruit house. Single-origin fruit, slow-dried and pressed into an edit of snacking pouches and shareable mix boxes.",
+    "Could Crunch is a premium dried-fruit house. Single-origin fruit, slow-dried and pressed into an edit of snacking pouches and shareable mix boxes.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
